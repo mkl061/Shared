@@ -83,4 +83,7 @@ model <- aov(data = df_fin,
          formula = Growth~Nitrogen*Density)
 summary(model)
 
-hist(a$residuals, main = "Histogram of Residuals", xlab = "Residuals", col = "steelblue")
+hist(model$residuals, 
+     main = "Histogram of Residuals", 
+     xlab = "Residuals", 
+     col = "steelblue")
